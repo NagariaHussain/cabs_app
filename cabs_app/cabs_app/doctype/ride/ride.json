@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:RIDE-{MM}-{YYYY}-{####}",
+ "creation": "2023-09-06 16:26:26.830600",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "vehicle",
+  "driver",
+  "column_break_bmzc",
+  "amended_from",
+  "section_break_jtvj",
+  "items",
+  "price_per_km",
+  "total_km",
+  "total_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vehicle",
+   "options": "Vehicle",
+   "reqd": 1
+  },
+  {
+   "fieldname": "driver",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Driver",
+   "options": "Driver",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Ride",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Ride Trip Item"
+  },
+  {
+   "fieldname": "column_break_bmzc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_jtvj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "price_per_km",
+   "fieldtype": "Currency",
+   "label": "Price Per KM"
+  },
+  {
+   "fieldname": "total_km",
+   "fieldtype": "Float",
+   "label": "Total KM"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-09-06 17:29:06.533923",
+ "modified_by": "Administrator",
+ "module": "Cabs App",
+ "name": "Ride",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_seen": 1,
+ "track_views": 1
+}
